@@ -17,7 +17,7 @@ const TextSlider = () => (
         }}
       >
         <Slide>
-          <span className="__text">Frontend</span>
+          <span className="__text">Back</span>
         </Slide>
         <Slide>
           <span className="__text">React</span>

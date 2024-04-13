@@ -54,10 +54,10 @@ const TextAnimation = () => {
       <Container ref={startTrigger} isShown={isShown}>
         <div className="text">
           <div className="text__content" ref={text1}>
-            LEE JEONG MIN
+            LEE JI WOO
           </div>
           <div className="text__content second" ref={text2}>
-            FRONTEND
+            DEVELOPER
           </div>
         </div>
         <div
@@ -73,10 +73,10 @@ const TextAnimation = () => {
         </div>
         <div className="text">
           <div className="text__content__border" ref={borderText1}>
-            LEE JEONG MIN
+            LEE JI WOO
           </div>
           <div className="text__content__border second" ref={borderText2}>
-            FRONTEND
+            DEVELOPER
           </div>
         </div>
       </Container>

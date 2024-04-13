@@ -7,7 +7,8 @@ import Information from "./Information";
 const Page2 = () => (
   <Wrapper className="flex">
     <Container className="flex">
-      <TextSlider />
+      {/* <TextSlider /> */}
+      <Title>안녕하세요. 개발자 이지우입니다.</Title>
       <ProgressBar />
       <Information />
       <TextBox className="flex pc-only">
@@ -91,6 +92,20 @@ const Bold = styled.span`
   -webkit-text-fill-color: transparent;
   ${media.mobile} {
     font-size: 1.5rem;
+    font-weight: 800;
+  }
+`;
+const Title = styled.span`
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-left: 0.3rem;
+  margin-bottom: 0.9rem;
+  background: ${({ theme }) => theme.color.gradient};
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  ${media.mobile} {
+    font-size: 2.5rem;
     font-weight: 800;
   }
 `;

@@ -46,7 +46,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link rel="shortcut icon" href="/memoji.svg" type="image/svg" />
-          <meta property="og:title" content="이정민 - Leejeongmin" />
+          <meta property="og:title" content="이지우 - Leejiwoo" />
           <meta property="og:image" content="/main.png" />
           <meta
             property="og:description"

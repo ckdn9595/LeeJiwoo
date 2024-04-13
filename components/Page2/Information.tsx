@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Memoji from "public/memoji.svg";
+import ProfileImg from "public/memoji.svg";
 import MemojiMobile from "public/memoji-mobile.svg";
 import Cursor from "public/cursor.svg";
 import { useState } from "react";
@@ -15,35 +15,34 @@ const Information = () => {
         onMouseLeave={() => setIsHover(false)}
       >
         <div className="memoji__box">Developer</div>
-        <Memoji className="memoji__svg pc-only" />
+        <ProfileImg className="memoji__svg pc-only" />
         <MemojiMobile className="memoji__svg mobile-only" />
         {!isHover && <Cursor className="memoji__cursor" />}
         <div className="memoji__circle" />
         <div className="memoji__info-circle" />
         <div className="memoji__info flex">
           {`
-            이정민
-            1999.11.08
-            Kyunghee Univ.
+            이지우
+            1995.11.18
             `}
         </div>
       </div>
       <div className="info">
         <div
           className="info__button"
-          onClick={() => window.open("mailto:ljm991108@gmail.com")}
+          onClick={() => window.open("mailto:ckdn9595@gmail.com")}
         >
-          ljm991108@gmail.com
+          ckdn9595@gmail.com
         </div>
         <div
           className="info__button"
-          onClick={() => window.open("https://github.com/danmin20")}
+          onClick={() => window.open("https://github.com/ckdn9595")}
         >
           GITHUB
         </div>
         <div
           className="info__button"
-          onClick={() => window.open("https://velog.io/@danmin20")}
+          onClick={() => window.open("https://ziwoodev.tistory.com")}
         >
           BLOG
         </div>
@@ -51,7 +50,7 @@ const Information = () => {
           className="info__button"
           onClick={() =>
             window.open(
-              "https://www.notion.so/danmin20/Resume-7c32047349064df5b0de46f325550e22"
+              "https://noiseless-floor-975.notion.site/Problem-Solver-e9b51160123546029597ea80b26c8fd7?pvs=4"
             )
           }
         >
@@ -88,7 +87,9 @@ const Conatiner = styled.div<{ isHover: boolean }>`
     &__svg {
       position: absolute;
       left: 3rem;
-      top: 3rem;
+      top: 4.5rem;
+      width:60%;
+      height:60%;
     }
     &__cursor {
       position: absolute;

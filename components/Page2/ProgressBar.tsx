@@ -16,7 +16,7 @@ const Progress = styled.div`
   height: 0.3rem;
   background: ${({ theme }) => theme.color.gradient};
   position: absolute;
-  animation: progress 4s infinite;
+  animation: progress 10s infinite;
 `;
 
 export default ProgressBar;
