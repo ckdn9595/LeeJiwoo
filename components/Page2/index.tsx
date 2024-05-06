@@ -20,7 +20,6 @@ const Page2 = () => (
           점점 더 빠르게 변하는 시대에 적응하기 위하여 <Bold>빠르고 깊게 이해하여 적용하는 능력</Bold>을 키우고 있습니다.{"\n"}
           이러한 능력은 튼튼한 기초와 넓은 지식에서 온다고 생각합니다.{"\n"}
           매일 새로운 지식을 쌓고 전공 지식의 이해를 넓히며 학습한 내용이 정말 나의 지식이 되었는가를 확인하기 위한 글을 쓰고 있습니다.{"\n"}
-          매일 발전하는 제 모습에서 하루의 보람을 느낍니다.
         </div>
       </TextBox>
 
@@ -34,7 +33,6 @@ const Page2 = () => (
           점점 더 빠르게 변하는 시대에 적응하기 위하여 <Bold>빠르고 깊게 이해하여 적용하는 능력</Bold>을 키우고 있습니다.{"\n"}
           이러한 능력은 튼튼한 기초와 넓은 지식에서 온다고 생각합니다.{"\n"}
           매일 새로운 지식을 쌓고 전공 지식의 이해를 넓히며 학습한 내용이 정말 나의 지식이 되었는가를 확인하기 위한 글을 쓰고 있습니다.{"\n"}
-          매일 발전하는 제 모습에서 하루의 보람을 느낍니다.
         </div>
       </TextBox>
     </Container>
@@ -53,6 +51,7 @@ const Container = styled.div`
   max-width: 1373px;
   height: 100%;
   padding-top: 3rem;
+  padding-bottom: 1rem;
   box-sizing: border-box;
   background-color: ${({ theme }) => theme.color.white};
   overflow: hidden;
