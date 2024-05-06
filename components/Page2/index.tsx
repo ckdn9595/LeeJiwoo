@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { media } from "styles/theme";
-import TextSlider from "./TextSlider";
 import ProgressBar from "./ProgressBar";
 import Information from "./Information";
 

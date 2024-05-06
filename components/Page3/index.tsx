@@ -4,17 +4,17 @@ import { media } from "styles/theme";
 import SkillBox from "./SkillBox";
 
 const strongList = [
-  "React",
-  "Next.js",
-  "Typescript",
+  "Spring",
+  ".net core",
+  "Java",
+  "C#",
+  "Python",
+  "Rust",
   "Javascript",
-  "GraphQL",
-  "Apollo",
-  "Recoil",
-  "SCSS",
-  "Storybook",
-  "Styled",
-  "Emotion",
+  "MySQL",
+  "MsSQL",
+  "InfluxDB",
+  "Docker",
 ];
 
 const Page3 = () => {

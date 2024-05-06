@@ -1,8 +1,8 @@
 export const skills = [
   {
-    title: "React",
+    title: "Spring",
     contents: [
-      "redux, redux saga, recoil 등의 상태관리 라이브러리 사용 경험이 있습니다.",
+      "스프링의 핵심 원리인 IoC와 DI에 대한 이해를 바탕으로, 다양한 비즈니스 요구사항에 맞춰 설계하고 구현할 수 있습니다.",
       "next.js를 활용한 SSR 개발 경험이 있습니다.",
     ],
   },
