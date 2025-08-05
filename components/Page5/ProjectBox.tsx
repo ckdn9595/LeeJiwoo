@@ -2,16 +2,21 @@ import styled from "styled-components";
 import Github from "public/github.svg";
 import Website from "public/website.svg";
 import Download from "public/download.svg";
+import Cursor from "public/cursor.svg";
+import { useState } from "react";
 import { media } from "styles/theme";
 
 const ProjectBox = ({ project, idx }: any) => {
   const isEven = (idx + 1) % 2 === 0;
+  const [isHover, setIsHover] = useState(false);
   return (
-    <Container data-aos={isEven ? "flip-right" : "flip-left"}>
+    <Container data-aos={isEven ? "flip-right" : "flip-left"} {...{ isHover }}>
       <div
         className={
-          isEven ? "container blue-container" : "container green-container"
+          isEven ? "container blue-container memoji" : "container green-container memoji"
         }
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
       >
         <div className="title">{project.title}</div>
         <div className="date">{project.date}</div>
@@ -21,7 +26,7 @@ const ProjectBox = ({ project, idx }: any) => {
           ))}
         </div>
         <div className="about">{project.about}</div>
-
+        <Cursor className="memoji__cursor" />
         {/* <div>{project?.website}</div>
         <div>{project?.github}</div> */}
         <div style={{ marginTop: "0.5rem" }}>
@@ -29,6 +34,7 @@ const ProjectBox = ({ project, idx }: any) => {
             <div className="content">{content}</div>
           ))}
         </div>
+
         <div className="icons">
           {project?.github && (
             <Github
@@ -55,6 +61,18 @@ const ProjectBox = ({ project, idx }: any) => {
 };
 
 const Container = styled.div`
+  .memoji {
+    cursor: pointer;
+    position: relative;
+    &__cursor {
+      position: absolute;
+      right: 7rem;
+      bottom: -2rem;
+      fill: #fff;
+      transform: rotate(60deg);
+      animation: fade 1s linear infinite;
+    }
+  }
   .container {
     padding: 2rem;
     position: relative;
@@ -169,7 +187,6 @@ const Container = styled.div`
       margin-right: 0;
     }
   }
-
   .blue-container {
     margin-left: 30rem;
     border: 0.1rem solid ${({ theme }) => theme.color.neonBlue};

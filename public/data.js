@@ -40,206 +40,93 @@ export const skills = [
 
 export const careers = [
   {
-    title: "우아한형제들",
-    date: "2021.07.05 ~ 2021.08.31",
-    about: "교육형 인턴 우아한테크캠프 4기",
-  },
-  {
-    title: "Naver",
-    date: "2021.03.02 ~ 2021.04.09",
-    about: "Glace CIC / 스마트플레이스서비스 FE 개발 인턴",
-  },
-  {
-    title: "Megazone Cloud",
-    date: "2020.11.02 ~ 2021.02.28",
-    about: "CTC / CloudOne FE 개발 인턴",
-  },
-  {
-    title: "TwentyOZ",
-    date: "2020.06.29 ~ 2020.10.16",
-    about: "FE 개발 인턴",
+    title: "InBody",
+    date: "2022.09.27 ~ ",
+    about: "Web개발파트 정규직",
   },
 ];
 
 export const activities = [
   {
-    title: "멋쟁이사자처럼",
-    date: "8기 운영진 (2020.03 ~ 2020.06)",
-    about: "대학생 창업 IT 동아리",
+    title: "삼성청년SW아카데미",
+    date: "2021.07 ~ 2022.06",
+    about: "삼성에서 지원하는 SW 교육 프로그램",
+  },
+];
+
+export const etc = [
+  {
+    title: "AI 서비스 제작 1등 특공대상 수상",
+    date: "2024.06",
+    about: "스파르타 코딩클럽에서 주최한 해커톤, 연애 갈등 해결앱 제작",
   },
   {
-    title: "SOPT",
-    date: "26기 YB (2020.03 ~ 2020.08) / 27기 비활OB (2021.01)",
-    about: "대학생 창업 IT 동아리",
-  },
-  {
-    title: "디프만",
-    date: "8기 (2020.07 ~ 2020.12) / 9기 운영진 (2021.03 ~ 2021.06)",
-    about: "대학생 창업 IT 동아리",
-  },
-  {
-    title: "우아한테크러닝",
-    date: "3기 (2020.09)",
-    about: "우아한형제들에서 주최한 교육 프로그램",
-  },
-  {
-    title: "AUSG",
-    date: "4기 (2020.09 ~ )",
-    about: "AWSKRUG 소속 AWS 대학생 동아리",
+    title: "싸피 자율프로젝트 우수상 수상",
+    date: "2022.05",
+    about: "삼성청년SW아카데미에서 주최한 자유 도메인 프로젝트 경진대회, 플로깅 행위 맞춤형 앱 제작",
   },
 ];
 
 export const projects = [
   {
-    title: "예약/주문 방문이력 지도 탐색",
-    date: "2021.03 ~ 2021.04 (1명)",
+    title: "자동매매프로그램",
+    date: "2024.02 ~ 2024.03 (1명)",
     skills: [
-      "React",
-      "Typescript",
-      "Next.js",
-      "GraphQL",
-      "Apollo",
-      "Recoil",
-      "Rechart",
+      "Python",
+      "InfluxDB"
     ],
+    github: "https://github.com/ckdn9595/upbitAutoTrade",
     website:
-      "https://www.notion.so/danmin20/NAVER-Glace-PPT-8b11aee3987e4742be61ce92a1769385",
-    about: "네이버에서 진행한 인턴 과제",
+      "https://noiseless-floor-975.notion.site/Crypto-878c3d608605453d888575be022f57a2?pvs=4",
+    about: "가상화페 자동매매 프로그램",
     contents: [
-      "네이버 지도 API를 활용한 POI 탐색",
-      "업종/기간/지역별 필터링 기능 구현",
-      "예약/주문 이력에 대한 데이터 시각화",
-      "지역 기반 마커 클러스터링 구현",
-      "atomic design system 기반의 컴포넌트 구현",
-      "storybook을 활용한 컴포넌트 UI 테스트",
-      "dynamic routing을 활용한 지도 url 공유 기능 구현",
-      "chrome, safari, firefox, opera에 대한 크로스브라우징 테스트",
-      "미디어쿼리를 이용한 반응형/적응형 구현",
+      "가상화폐는 24시간동안 거래가 가능합니다.",
+      "반면에, 사람은 계속 차트를 확인할 수 없습니다. 따라서, 신경을 쓰지않아도 하락에 인한 큰 손실을 방지하는 것을 주 목적으로 만들었습니다.",
     ],
   },
   {
-    title: "SpaceONE 디자인시스템 개선",
-    date: "2020.11 ~ 2021.02 (3명)",
-    skills: ["Vue", "Typescript", "Storybook", "PostCSS"],
-    github: "https://github.com/spaceone-dev/spaceone-design-system",
-    website: "https://storybook.developer.spaceone.dev/",
-    about:
-      "메가존클라우드에서 개발한 SpaceONE 서비스의 디자인시스템의 storybook 개선 및 컴포넌트 개발",
-    contents: [
-      "기존 option api에서 Vue3 composition api으로 마이그레이션",
-      "기존 atomic 시스템 기반의 스토리북 구조에서 컴포넌트 종류에 따른 구조로 변환",
-      "컴포넌트 css 수정 및 기능 추가 개발",
-      "typescript 마이그레이션",
-      "storybook mdx 도입",
-    ],
-  },
-  {
-    title: "paceONE 프로젝트 사이트 개발",
-    date: "2020.12 ~ 2021.02 (2명)",
-    skills: ["React", "Next.js", "Typescript", "Sass"],
-    github: "https://github.com/spaceone-dev/project-site",
-    website: "https://www.spaceone.org/",
-    about: "메가존클라우드에서 개발한 SpaceONE 서비스를 소개하는 웹사이트 개발",
-    contents: [
-      "next 기반의 SSR 웹 애플리케이션 구축",
-      "BEM 방법론을 적용하여 styled components 사용",
-    ],
-  },
-  {
-    title: "SpaceONE 콘솔 뷰 개선 및 이슈 해결",
-    date: "2020.12 ~ 2021.02 (4명)",
-    github: "https://github.com/spaceone-dev/console",
-    skills: ["Vue", "Typescript", "PostCSS", "BabelEdit"],
-    about:
-      "메가존클라우드에서 개발한 SpaceONE(클라우드 콘솔 서비스)에 대한 이슈 해결",
-    contents: [
-      "로딩페이지 뷰 변경",
-      "overlay transition 개선",
-      "플러그인 관리 페이지 table 뷰 개선 및 번역 추가",
-    ],
-  },
-  {
-    title: "쿠키파킹 개발",
-    date: "2020.12 ~ 2021.02 (4명)",
-    skills: ["React", "Javascript", "Recoil"],
-    download: "https://www.cookieparking.com/",
-    website: "https://www.cookieparking.com/landing",
-    about: "방문한 사이트를 저장하고 관리할 수 있는 웹 익스텐션 서비스",
-    contents: [
-      "newtab extension 개발",
-      "popup extension 개발",
-      "extension에 맞는 웹팩 셋팅",
-    ],
-  },
-  {
-    title: "아보카도 개발",
-    date: "2020.10 ~ 2020.12 (3명)",
-    skills: ["React", "Javascript", "Recoil"],
-    github: "https://github.com/depromeet/8th-final-front-6team",
-    website: "https://abocado.netlify.app/",
-    about: "커머스 별 채소 최저가를 보여주는 웹 서비스",
-    contents: [
-      "채소를 검색하여 장바구니에 담는 페이지 개발",
-      "장바구니의 채소들에 대해 커머스 별로 가격을 보여주는 페이지 개발",
-    ],
-  },
-  {
-    title: "fms 어드민 웹사이트 개발",
-    date: "2020.07 ~ 2020.10 (3명)",
-    skills: ["Vue", "Javascript", "Vuex", "Antd", "Highcharts"],
-    website:
-      "https://www.notion.so/danmin20/NAVER-Glace-PPT-8b11aee3987e4742be61ce92a1769385",
-    about: "TwentyOZ에서 개발한 fms 어드민 웹사이트",
-    contents: [
-      "getters와 mutations에 따른 download 구조 분리",
-      "그리드 시스템 기반의 css 마크업",
-      "페이지 개발 및 리팩토링",
-    ],
-  },
-  {
-    title: "fms 근무자용 웹뷰 기반 앱 개발",
-    date: "2020.06 ~ 2020.10 (3명)",
-    skills: ["Vue", "Javascript", "Vuex"],
-    website:
-      "https://www.notion.so/danmin20/NAVER-Glace-PPT-8b11aee3987e4742be61ce92a1769385",
-    about: "TwentyOZ에서 개발한 fms 근무자용 웹뷰 기반 앱",
-    contents: [
-      "api 추가에 따른 기능 추가 및 화면 개발",
-      "리팩토링 및 유지보수",
-    ],
-  },
-  {
-    title: "Gagle(가까운 글) 개발",
-    date: "2020.07 ~ 2020.09 (2명)",
-    skills: ["React", "Typescript", "Redux", "Redux-saga"],
-    github: "https://github.com/depromeet/88mingup",
-    website: "http://gargle.s3-website.ap-northeast-2.amazonaws.com/",
-    about: "위치 기반 SNS 서비스",
-    contents: [
-      "사진을 첨부하고 글을 작성하는 페이지 개발",
-      "atom 단위의 재활용 가능한 컴포넌트 (box, button, tag 등) 개발",
-    ],
-  },
-  {
-    title: "MyBook 개발",
-    date: "2020.02 ~ 2020.03 (1명)",
+    title: "Plomeet",
+    date: "2022.04 ~ 2022.05 (6명)",
     skills: [
-      "React Native",
-      "Javascript",
-      "GraphQL",
-      "Apollo",
-      "Node.js",
-      "PostgresQL",
-      "Prisma",
+      "ReactNative",
+      "Redux",
+      "SpringBoot",
+      "JPA",
+      "MySql",
     ],
-    github: "https://github.com/danmin20/MyBook-app",
-    download:
-      "https://play.google.com/download/apps/details?id=com.danmin.mybook&hl=ko&gl=US",
-    about: "독서기록장 SNS 서비스",
+    github: "https://github.com/plomeet/plomeet",
+    website:
+      "https://noiseless-floor-975.notion.site/PloMeet-6709f760dbed484cace0ff3d702c93cd?pvs=4",
+    about: "플로깅 행위 맞춤형 앱",
     contents: [
-      "Prisma orm을 사용하여 데이터 관리",
-      "GraphQL 기반의 서버 구축",
-      "Expo를 사용하여 앱 빌드",
+      "플로밋은 플로깅(Plogging)과 만남(Meeting)의 합성어로 환경보호 운동 Plogging을 함께 할 수 있도록 기획한 앱서비스입니다.",
+    ],
+  },
+  {
+    title: "Black Belt",
+    date: "2022.03 ~ 2022.04 (6명)",
+    skills: ["SpringBoot", "JPA", "MyBatis", "Mysql"],
+    github: "https://github.com/black-belt/black-belt",
+    website: "https://noiseless-floor-975.notion.site/BLACK-BELT-be543f2a29894e79afbc1a41321c22a8",
+    about:
+      "온라인으로 쉽게 태권도를 학습하게 해주는 서비스",
+    contents: [
+      "태권도 자세 모델을 활용해 기본 자세, 품새를 배울 수 있습니다.",
+      "심사를 통해 학습한 품새를 평가받아 승단할 수 있습니다.",
+      "매칭된 상대방과 겨루기를 통해 우열을 가릴 수 있습니다.",
+    ],
+  },
+  {
+    title: "차키줘바",
+    date: "2022.01 ~ 2022.02 (4명)",
+    skills: ["React", "Next.js", "Express.js", "Raspberry Pi"],
+    github: "https://github.com/ckdn9595/IOT_carSharing",
+    website: "https://noiseless-floor-975.notion.site/1c74ed9457664765b61056a5edc0260c",
+    about: "라즈베리파이를 IOT 디바이스로 활용한 개인간 차량 공유 서비스 플랫폼",
+    contents: [
+      "본인의 차량을 플랫폼에 등록하여 임대할 수 있습니다.",
+      "임차인은 운전면허와 결제수단을 등록한 후 지도에서 가까운 차량을 찾아 기간을 선택하여 렌트를 할 수 있습니다.",
+      "등록된 차량은 이용기간동안 서비스에서 제공하는 차량 제어 요청에 응답합니다."
     ],
   },
 ];

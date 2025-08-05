@@ -1,7 +1,7 @@
-import { skills } from "public/data";
+//import { skills } from "public/data";
 import styled from "styled-components";
 import { media } from "styles/theme";
-import SkillBox from "./SkillBox";
+//import SkillBox from "./SkillBox";
 
 const strongList = [
   "Spring",
@@ -21,7 +21,7 @@ const Page3 = () => {
   return (
     <div className="flex">
       <Container className="flex">
-        <Title text={"Strength."}>Strength.</Title>
+        <Title text={"Skills."}>Skills.</Title>
         <div className="strong flex">
           {strongList.map((skill, idx) => (
             <div key={idx.toString()} className="strong__skill">
@@ -29,11 +29,11 @@ const Page3 = () => {
             </div>
           ))}
         </div>
-        <div className="skills">
+        {/* <div className="skills">
           {skills.map((skill, idx) => (
             <SkillBox key={idx.toString()} skill={skill} />
           ))}
-        </div>
+        </div> */}
       </Container>
     </div>
   );
@@ -41,7 +41,7 @@ const Page3 = () => {
 
 const Container = styled.div`
   max-width: 1373px;
-  height: 100vh;
+  height: 30vh;
   box-sizing: border-box;
   flex-direction: column;
   ${media.mobile} {

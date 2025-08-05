@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { careers, activities } from "public/data";
+import { careers, activities, etc } from "public/data";
 import CareerBox from "./CareerBox";
 import { media } from "styles/theme";
 
@@ -31,12 +31,29 @@ const Page4 = () => {
             transform: "rotate(40deg)",
           }}
         />
-        <Title className="left" text="Activity.">
-          Activity.
+        <Title className="left" text="Education.">
+          Education.
         </Title>
         <div className="card__content">
           {activities.map((activity, idx) => (
             <CareerBox key={idx.toString()} career={activity} isEnd />
+          ))}
+        </div>
+      </div>
+      <div className="card">
+        <Arraw
+          style={{
+            right: "0.5rem",
+            top: "-0.2rem",
+            transform: "rotate(40deg)",
+          }}
+        />
+        <Title className="right" text="ETC.">
+          ETC.
+        </Title>
+        <div className="card__content">
+          {etc.map((etc, idx) => (
+            <CareerBox key={idx.toString()} career={etc} />
           ))}
         </div>
       </div>
@@ -46,7 +63,7 @@ const Page4 = () => {
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   box-sizing: border-box;
   padding: 5rem 10rem;
   flex-direction: column;
@@ -54,6 +71,7 @@ const Container = styled.div`
   flex: 1;
   overflow: hidden;
   align-items: flex-start;
+  background-color: white;
   .card {
     box-sizing: border-box;
     width: 100%;
@@ -78,16 +96,28 @@ const Container = styled.div`
         padding-right: 3rem;
       }
     }
-    :last-child {
+    :nth-child(2) {
       padding-top: 2rem;
       border: 0px solid ${({ theme }) => theme.color.red};
       border-left-width: 0.5rem;
-      bottom: 2rem;
+      bottom: 22rem;
       left: 5rem;
       ${media.mobile} {
         justify-content: flex-start;
         left: 3rem;
         padding-left: 3rem;
+      }
+    }
+    :last-child {
+      padding-bottom: 2rem;
+      border: 0px solid ${({ theme }) => theme.color.red};
+      border-right-width: 0.5rem;
+      bottom: 5rem;
+      right: 5rem;
+      ${media.mobile} {
+        justify-content: flex-end;
+        right: 3rem;
+        padding-right: 3rem;
       }
     }
   }
