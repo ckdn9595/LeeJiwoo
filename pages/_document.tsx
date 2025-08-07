@@ -72,6 +72,7 @@ class MyDocument extends Document {
           <script src="https://unpkg.com/aos@next/dist/aos.js" />
           <script>AOS.init();</script>
           <Main />
+          <div id="modal-root"></div>
           <NextScript />
         </body>
       </Html>

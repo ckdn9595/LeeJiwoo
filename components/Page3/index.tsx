@@ -1,19 +1,15 @@
-//import { skills } from "public/data";
 import styled from "styled-components";
 import { media } from "styles/theme";
-//import SkillBox from "./SkillBox";
 
 const strongList = [
-  "Spring",
-  ".net core",
-  "Java",
-  "C#",
-  "Python",
-  "Rust",
-  "Javascript",
-  "MySQL",
-  "MsSQL",
-  "InfluxDB",
+  "java",
+  "javascript",
+  "python",
+  "rust",
+  "sql",
+  "spring",
+  "mysql",
+  "postgresql",
   "Docker",
 ];
 
@@ -21,7 +17,7 @@ const Page3 = () => {
   return (
     <div className="flex">
       <Container className="flex">
-        <Title text={"Skills."}>Skills.</Title>
+        <Title text={"주요 Skills."}>주요 Skills.</Title>
         <div className="strong flex">
           {strongList.map((skill, idx) => (
             <div key={idx.toString()} className="strong__skill">
@@ -29,11 +25,6 @@ const Page3 = () => {
             </div>
           ))}
         </div>
-        {/* <div className="skills">
-          {skills.map((skill, idx) => (
-            <SkillBox key={idx.toString()} skill={skill} />
-          ))}
-        </div> */}
       </Container>
     </div>
   );
@@ -41,45 +32,42 @@ const Page3 = () => {
 
 const Container = styled.div`
   max-width: 1373px;
-  height: 30vh;
+  height: auto;
+  padding: 5rem 0;
   box-sizing: border-box;
   flex-direction: column;
   ${media.mobile} {
-    height: auto;
     margin: 5rem 0;
   }
   .strong {
     width: 90%;
     margin-top: 2rem;
-    justify-content: space-between;
-    overflow: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
     ${media.mobile} {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
     &__skill {
-      border: 0.2rem solid white;
+      border: 1px solid white;
       font-weight: 500;
-      padding: 0.2rem 0.5rem;
-      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
       color: ${({ theme }) => theme.color.white};
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: ${({ theme }) => theme.color.blue};
+        border-color: ${({ theme }) => theme.color.blue};
+      }
+
       ${media.mobile} {
         margin: 0.5rem;
         padding: 0.5rem;
         text-align: center;
       }
-    }
-  }
-  .skills {
-    margin: 0 -2rem;
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    ${media.mobile} {
-      margin: 0;
-      margin-top: 3rem;
-      display: flex;
-      flex-direction: column;
     }
   }
 `;

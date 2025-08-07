@@ -46,16 +46,6 @@ const Information = () => {
         >
           BLOG
         </div>
-        <div
-          className="info__button"
-          onClick={() =>
-            window.open(
-              "https://noiseless-floor-975.notion.site/Problem-Solver-e9b51160123546029597ea80b26c8fd7?pvs=4"
-            )
-          }
-        >
-          RESUME
-        </div>
       </div>
     </Conatiner>
   );

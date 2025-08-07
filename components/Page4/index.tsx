@@ -63,13 +63,12 @@ const Page4 = () => {
 
 const Container = styled.div`
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   box-sizing: border-box;
   padding: 5rem 10rem;
   flex-direction: column;
   position: relative;
   flex: 1;
-  overflow: hidden;
   align-items: flex-start;
   background-color: white;
   .card {
@@ -78,6 +77,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     position: absolute;
+    z-index: 1;
     &__content {
       flex: 0.8;
       ${media.mobile} {
@@ -137,6 +137,7 @@ const Title = styled.div<{ text: string }>`
   position: absolute;
   font-size: 3rem;
   font-weight: 800;
+  z-index: 2;
   ::after {
     content: "${({ text }) => `${text}`}";
     position: absolute;
@@ -150,7 +151,8 @@ const Arraw = styled.div`
   position: absolute;
   height: 3rem;
   width: 0.5rem;
-  background-color: ${({ theme }) => theme.color.red}; ;
+  background-color: ${({ theme }) => theme.color.red};
+  z-index: 2;
 `;
 
 export default Page4;
