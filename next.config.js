@@ -34,7 +34,7 @@ module.exports = withBundleAnalyzer({
   ) {
     return {
       '/': { page: '/' },
-      '/about': { page: '/about' },
+      
       // 여기에 더 많은 경로를 추가하세요
     };
   },

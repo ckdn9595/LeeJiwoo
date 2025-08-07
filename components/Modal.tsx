@@ -43,20 +43,6 @@ const ModalContent = styled.div`
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;
 
-const CloseButton = styled.button`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #aaa;
-  line-height: 1;
 
-  &:hover {
-    color: #333;
-  }
-`;
 
 export default Modal;
