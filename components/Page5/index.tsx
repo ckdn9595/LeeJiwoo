@@ -14,7 +14,6 @@ const Page5 = () => {
           </div>
         ))}
       </div>
-      <div className="text">{`Designed & Developed By `}</div>
     </Container>
   );
 };
@@ -49,7 +48,7 @@ const Container = styled.div`
     font-weight: 800;
     ::after {
       color: #fff;
-      content: "LeeJeongMin";
+      content: "";
     }
   }
 `;

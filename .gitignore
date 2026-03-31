@@ -26,3 +26,4 @@ dist
 *.bak
 
 node_modules.nosync/
+.vercel
